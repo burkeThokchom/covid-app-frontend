@@ -34,7 +34,7 @@ const getCasesForGraph = async (dispatch, toDate)=>{
                         Recovered: respData.data.getCasesForGraph[1],
                         Deceased: respData.data.getCasesForGraph[2],
                     }
-                })
+                }) 
             }
             else{
                 dispatch({
