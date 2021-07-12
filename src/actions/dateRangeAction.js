@@ -43,7 +43,7 @@ const getCasesForGraph = async (dispatch, toDate)=>{
                         Hospitalized: 0,
                         Recovered: 0,
                         Deceased: 0
-                    }
+                    }    
                 })
             }
             
