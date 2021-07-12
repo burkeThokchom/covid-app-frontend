@@ -1,0 +1,51 @@
+.dsb_txt_cntr {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #6363c1;
+}
+.dsb__disFlex{
+    display: flex;
+}
+.dsb__mainCOntent {
+    flex-direction: column;
+}
+.dsb_field {
+    flex: 1 1;
+    text-align: center;
+    margin: 0 20px;
+    color: #6363c1;
+}
+.dsb_field {
+    flex: 1 1;
+    text-align: center;
+    margin: 0 20px;
+    padding: 15px;
+}
+.dsb_filterLabel{
+    display: inline-block;
+    margin-right: 15px;
+}
+.dbs__select{
+    padding: 15px 25px;
+    font-size: 16px;
+}
+.dsb__cardSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsb_filterSec {
+    background: #fff;
+    margin: 10px;
+    padding: 15px 0;
+    border-radius: 15px;
+}
+.dsb__graphSec{
+    background: #fff;
+    margin: 10px;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+

@@ -1,0 +1,13 @@
+/* *{
+  margin:0;
+} */
+
+.App{
+  background: #09001f12;
+    min-height: 100vh;
+}
+
+.dsb_filterSec.dsb__disFlex {
+  background: #fff;
+  padding: 15px 0;
+}
