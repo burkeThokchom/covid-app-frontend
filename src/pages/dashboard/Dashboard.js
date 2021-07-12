@@ -17,11 +17,17 @@ function Dashboard() {
     // const [fromDate, setFromDate] = useState(new Date(moment().add(-1, 'days')));
     const [state, dispatch] = useStateValue();
 
-    
+    const logout = ()=>{
+        localStorage.clear();
+        history.push('/login')
+    }
 
     return (
         <div>
             <h3 className="dsb_txt_cntr">Covid Tracker</h3>
+            <div className="dsb_dsbuserInfo">
+                <span onClick={logout}>{localStorage.email}</span>
+            </div>
             <div className = "dsb__mainCOntent dsb__disFlex">
                 <div className="dsb_filterSec dsb__disFlex">
                     <div className="dsb_field">

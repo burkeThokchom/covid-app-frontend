@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './Login.css';
 import { Link, useHistory } from 'react-router-dom';
-//import { auth } from '../firebase';
 import { useStateValue } from '../../context/StateProvider';
 
 function Login() {
@@ -9,18 +8,6 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [state, dispatch] = useStateValue();
-
-    // const firebaseLogin = (event)=>{
-    //     event.preventDefault();
-    //     auth.signInWithEmailAndPassword(email, password)
-    //     .then((auth)=>{
-    //         //logged in... redirecting to homepage
-    //         history.push('/');
-    //     })
-    //     .catch(err=>{
-    //         alert(err.message)
-    //     })
-    // }
 
     const login = (event)=>{
         event.preventDefault();
@@ -79,18 +66,9 @@ function Login() {
         })
     }
 
-    // const register = (event)=>{
-    //     event.preventDefault();
-    //     auth.createUserWithEmailAndPassword(email, password)
-    //     .then((auth)=>{
-    //         //redireting to homepage
-    //         history.push('/')
-
-    //     })
-    //     .catch(err=>{
-    //         alert(err.message);
-    //     })
-    // }
+    const goToLogin = ()=>{
+        history.push('/register')
+    }
     return (
         <div className="login">
             <Link to ='/'>
@@ -113,7 +91,7 @@ function Login() {
                     <p>
                         Create an account if you dont have any.
                     </p>
-                    <button type= "submit" className="login__registerButton">Register with us</button>
+                    <button type= "submit" className="login__registerButton" onClick={goToLogin}>Register with us</button>
                 </form>
             </div>
         </div>

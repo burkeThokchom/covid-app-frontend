@@ -27,7 +27,7 @@ function App() {
         } 
           <Route path="/login" component={Login}>
           </Route>
-          <Route path="/register"omponent={Login}>
+          <Route path="/register" component={Register}>
           </Route>
         {localStorage.token && 
             <Route path="/dashboard">

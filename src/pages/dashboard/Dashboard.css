@@ -10,18 +10,14 @@
 }
 .dsb__mainCOntent {
     flex-direction: column;
-}
-.dsb_field {
-    flex: 1 1;
-    text-align: center;
-    margin: 0 20px;
-    color: #6363c1;
+    width: 100%;
 }
 .dsb_field {
     flex: 1 1;
     text-align: center;
     margin: 0 20px;
     padding: 15px;
+    color: #6363c1;
 }
 .dsb_filterLabel{
     display: inline-block;
@@ -47,5 +43,32 @@
     margin: 10px;
     padding: 15px 40px;
     border-radius: 15px;
+    width: 500px;
 }
 
+@media only screen and (max-width: 460px) {
+    .dsb_filterSec.dsb__disFlex {
+        background: #fff;
+        padding: 15px 0;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .dsb__graphSec{
+        background: #fff;
+        margin: 10px;
+        padding: 15px 40px;
+        border-radius: 15px;
+        width: 315px;
+    }
+    .dsb_field{
+        flex: 1 1;
+        text-align: left;
+        margin: 11px 10px;
+        padding: 2px;
+        color: #6363c1;
+    }
+  }
+
+  .dsb_dsbuserInfo{
+      text-align: right;;
+  }

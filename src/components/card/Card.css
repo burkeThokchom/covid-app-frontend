@@ -16,3 +16,18 @@
     color: #6363c1;
     font-size: 30px;
 }
+
+@media only screen and (max-width: 460px) {
+    
+    .crd__wrap {
+        flex-direction: column;
+        background: #fff;
+        flex: 1 1;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 50px 0px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px -1px #00000038;
+        }
+  }
